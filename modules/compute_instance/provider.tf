@@ -1,3 +1,3 @@
 provider "google" {
-  # Configuration options
+  region = "europe-west1"
 }
