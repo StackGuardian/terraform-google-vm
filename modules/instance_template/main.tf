@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+
 #########
 # Locals
 #########
@@ -44,6 +44,7 @@ locals {
 
   gpu_enabled            = var.gpu != null
   alias_ip_range_enabled = var.alias_ip_range != null
+  /*
   on_host_maintenance = (
     var.preemptible || var.enable_confidential_vm || local.gpu_enabled
     ? "TERMINATE"
@@ -53,6 +54,7 @@ locals {
     # must be false when preemptible is true
     var.preemptible ? false : var.automatic_restart
   )
+  */
 }
 
 ####################
@@ -180,7 +182,7 @@ resource "google_compute_instance_template" "tpl" {
   confidential_instance_config {
     enable_confidential_compute = var.enable_confidential_vm
   }
-
+/*
   dynamic "guest_accelerator" {
     for_each = local.gpu_enabled ? [var.gpu] : []
     content {
@@ -188,6 +190,5 @@ resource "google_compute_instance_template" "tpl" {
       count = guest_accelerator.value.count
     }
   }
+  */
 }
-  
-*/
