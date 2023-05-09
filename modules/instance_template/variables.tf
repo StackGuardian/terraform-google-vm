@@ -142,7 +142,7 @@ variable "auto_delete" {
   type        = string
   default     = "true"
 }
-   /*
+  
 
 variable "additional_disks" {
   description = "List of maps of additional disks. See https://www.terraform.io/docs/providers/google/r/compute_instance_template#disk_name"
