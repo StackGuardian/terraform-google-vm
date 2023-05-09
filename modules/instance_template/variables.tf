@@ -19,7 +19,7 @@ variable "project_id" {
   description = "The GCP project ID"
   default     = null
 }
-/*
+
 variable "name_prefix" {
   description = "Name prefix for the instance template"
   type        = string
@@ -317,4 +317,3 @@ EOF
   })
   default = null
 }
-*/
