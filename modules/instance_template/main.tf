@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 #########
 # Locals
 #########
@@ -189,3 +189,5 @@ resource "google_compute_instance_template" "tpl" {
     }
   }
 }
+  
+*/
