@@ -182,7 +182,7 @@ resource "google_compute_instance_template" "tpl" {
   confidential_instance_config {
     enable_confidential_compute = var.enable_confidential_vm
   }
-/*
+
   dynamic "guest_accelerator" {
     for_each = local.gpu_enabled ? [var.gpu] : []
     content {
@@ -190,5 +190,4 @@ resource "google_compute_instance_template" "tpl" {
       count = guest_accelerator.value.count
     }
   }
-  */
 }
