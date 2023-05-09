@@ -44,13 +44,10 @@ locals {
 
   gpu_enabled            = var.gpu != null
   alias_ip_range_enabled = var.alias_ip_range != null
-  /*
   on_host_maintenance = (
     var.preemptible || var.enable_confidential_vm || local.gpu_enabled
-    ? "TERMINATE"
-    : var.on_host_maintenance
+    ? "TERMINATE" : var.on_host_maintenance
   )
-  */
   automatic_restart = (
     # must be false when preemptible is true
     var.preemptible ? false : var.automatic_restart
