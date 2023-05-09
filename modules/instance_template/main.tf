@@ -50,11 +50,11 @@ locals {
     ? "TERMINATE"
     : var.on_host_maintenance
   )
+  */
   automatic_restart = (
     # must be false when preemptible is true
     var.preemptible ? false : var.automatic_restart
   )
-  */
 }
 
 ####################
