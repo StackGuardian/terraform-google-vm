@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 output "self_link" {
   description = "Self-link of instance template"
   value       = google_compute_instance_template.tpl.self_link
@@ -28,3 +28,4 @@ output "tags" {
   description = "Tags that will be associated with instance(s)"
   value       = google_compute_instance_template.tpl.tags
 }
+   */
