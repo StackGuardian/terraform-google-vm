@@ -21,7 +21,7 @@ output "instances_self_links" {
 
 output "instances_details" {
   description = "List of all details for compute instances"
-  value       = nonsensitive(google_compute_instance_from_template.compute_instance.*)
+  value       = nonsensitive(google_compute_instance_from_template.compute_instance)
 }
 
 output "available_zones" {
