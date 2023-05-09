@@ -77,7 +77,7 @@ variable "instance_template" {
   description = "Instance template self_link used to create compute instances"
   type        = string
 }
-/*
+
 variable "region" {
   type        = string
   description = "Region where the instances should be created."
@@ -116,4 +116,3 @@ variable "resource_policies" {
   type        = list(string)
   default     = []
 } 
-*/
